@@ -2,8 +2,7 @@
 
 ## 개발동기
   - 미래에 또 다른 전염성 유행병이 발병하면 코로나19의 경험을 통해 국가적 방역 대책이 시행될 것이고 방역 대책이나 다양한 우발상 황에 따른 확진자의 변화가 코로나19와 유사하게 진행될 것이라고 생각한다
-  - 한국정보통신학회논문지 “시계열 데이터를 활용한 코로나19 동향 예측”(수원대학교 논문)이 라는 코로나 데이터를 시계열 데이터를 통한 확진자 예측 모델를 기반
-  - 논문에서는 Prophet 알고리즘을 사용하여 코로나 국내발생 예측
+  - [한국정보통신학회논문지 “시계열 데이터를 활용한 코로나19 동향 예측”(수원대학교 논문)] (https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002741446)이 라는 코로나 데이터를 시계열 데이터를 통한 확진자 예측 모델를 기반
 
 ## 분석목표
   - 코로나와 경제 데이터를 통해 다음날 코로나 확진자를 예측하는 모델 생성 
@@ -14,7 +13,15 @@
   - 
 
 ## 분석방법
-  - 정부 발표자료를 통한 데이터 수집 및 전처리
+  - 정부 발표자료를 통한 데이터 수집 
+    - 일일 확진자 : today_confirmed (https://ncov.kdca.go.kr/)
+    - 일일 사망자 : today_dead (https://ncov.kdca.go.kr/)
+    - 1차 백신접종자 : first_shot (https://ncv.kdca.go.kr/)
+    - 2차 백신접종자 : second_shot (https://ncv.kdca.go.kr/)
+    - 3차 백신접종자 : third_shot (https://kdx.kr/data/view/30239)
+    - 동절기 백신접종자 : winter_shot (https://ncv.kdca.go.kr/)
+  - 경제 및 국가 통제 데이터 수집
+    - 코스 : kospi (https://finance.yahoo.com)
     - 
   - 시각화를 통한 데이터 분석
   - 코로나 데이터를 적용한 모델 생성
